@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sagnic Bhattacharyya | Creative Developer & Software Engineer</title>
+<meta name="description" content="Sagnic Bhattacharyya, B.Tech CSE student and creative developer building interactive web products and custom operating systems.">
+<meta property="og:title" content="Sagnic Bhattacharyya | Creative Developer & Software Engineer">
+<meta property="og:description" content="Designing experiences. Engineering possibilities.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#070612">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}try{if(!sessionStorage.getItem("introSeen")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-pending")}catch(e){}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070612'/%3E%3Ctext x='32' y='43' font-size='30' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23A855F7'%3ESB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<div class="nebula" aria-hidden="true"></div><canvas id="stars" aria-hidden="true"></canvas>
+<div class="cur-dot" aria-hidden="true"></div><div class="cur-ring" aria-hidden="true"></div>
+<header class="nav">
+  <a class="logo" href="#top" aria-label="Sagnic Bhattacharyya, home">SB<i></i></a>
+  <nav aria-label="Primary"><button class="menu-btn" aria-expanded="false" aria-controls="links">Menu</button>
+    <ul id="links"><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#work">Work</a></li><li><a href="#archive">Archive</a></li><li><a href="#journey">Journey</a></li><li><a href="#contact">Contact</a></li><li class="ind" aria-hidden="true"></li></ul></nav>
+  <button class="theme-btn" id="theme">Light</button>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="hero-text">
+    <p class="role"><span class="pulse"></span><span id="typed">Creative Developer</span></p>
+    <i class="shape s1"></i><i class="shape s2"></i><i class="shape s3"></i><i class="shape s4"></i>
+    <h1 class="name" id="name" aria-label="Sagnic Bhattacharyya"><span>Sagnic</span><span>Bhattacharyya</span></h1>
+    <p class="headline">Designing Experiences.<br>Engineering Possibilities.</p>
+    <p class="lead">I'm Sagnic, a creative developer building interactive digital experiences, practical software solutions and products through technology.</p>
+    <div class="cta">
+      <a class="btn primary magnetic" href="#work">Explore my work</a>
+      <a class="btn magnetic" id="resume-dl" href="" download="Sagnic_Bhattacharyya_Resume.pdf">Download resume</a>
+      <a class="btn ghost magnetic" id="gh-link" href="" target="_blank" rel="noopener">Explore GitHub</a>
+    </div>
+  </div>
+  <figure class="stage" id="stage">
+    <i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i><div class="glow"></div>
+    <img id="profile" alt="Portrait of Sagnic Bhattacharyya" width="480" height="600" decoding="async">
+    <span class="chip c1">B.Tech CSE · 2027</span><span class="chip c2">Berhampore, India</span><span class="chip c3">InAmigos Intern '26</span>
+  </figure>
+  <a class="scroll-hint" href="#about" aria-label="Scroll to About"><span></span></a>
+</section>
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section id="about" class="wrap">
+  <div class="sh"><b>01</b><h2>About</h2><i class="line"></i></div>
+  <div class="about-grid">
+    <p class="big" id="big">I enjoy creating things that live on the internet and work seamlessly at the system level, from dynamic interfaces to memory management inside custom OS kernels.</p>
+    <aside class="panel reveal"><dl>
+      <dt>Studying</dt><dd>B.Tech, Computer Science & Engineering</dd>
+      <dt>College</dt><dd>Hooghly Engineering and Technology College, 2027</dd>
+      <dt>Based in</dt><dd>Berhampore, Murshidabad, West Bengal</dd>
+      <dt>Focus</dt><dd>Accessible, human-centered applications and low-level system design</dd>
+      <dt>Approach</dt><dd>Learn a technology by building something real with it.</dd></dl></aside>
+  </div>
+</section>
+
+<section id="skills" class="wrap">
+  <div class="sh"><b>02</b><h2>Skill constellation</h2><i class="line"></i></div>
+  <div class="tabs" role="group" aria-label="Skill categories"></div>
+  <div class="const" id="const"><svg id="lines" aria-hidden="true"></svg></div>
+</section>
+
+<section id="work" class="wrap wide">
+  <div class="sh"><b>03</b><h2>Selected projects</h2><i class="line"></i></div>
+  <div id="projects"></div>
+</section>
+
+<section id="archive" class="wrap">
+  <div class="sh"><b>04</b><h2>GitHub archive</h2><i class="line"></i></div>
+  <p class="muted">Every other public repository, fetched live from GitHub.</p>
+  <div class="tools">
+    <label class="sr" for="q">Search repositories</label><input id="q" type="search" placeholder="Search repositories">
+    <label class="sr" for="lang">Language</label><select id="lang"><option value="">All languages</option></select>
+    <label class="sr" for="sort">Sort</label><select id="sort"><option value="updated">Recently updated</option><option value="stars">Most stars</option><option value="name">Name</option></select>
+  </div>
+  <div id="repos" class="repos" aria-live="polite"></div>
+  <button class="btn" id="more" hidden>Load more</button>
+  <h3>Contribution activity</h3>
+  <a id="graph-link" href="" target="_blank" rel="noopener" class="graph panel"><img id="graph" alt="GitHub contribution graph for sagnic05" loading="lazy"><span>View the full graph on GitHub</span></a>
+</section>
+
+<section id="journey" class="wrap">
+  <div class="sh"><b>05</b><h2>Journey</h2><i class="line"></i></div>
+  <ol class="tl" id="timeline"></ol>
+  <button class="btn" id="cert-btn" hidden>View certificate</button>
+<div class="certs"><div class="cert-card panel reveal" id="cert-card"><span>Certification</span><h3>Fortinet Certified Associate in Cybersecurity</h3></div>
+  <div class="cert-card panel reveal"><span>Achievement</span><h3>SIH 2025 Internal Hackathon</h3><p class="muted">Participant, Team ByteKoders</p></div></div>
+</section>
+
+<section id="resume" class="wrap">
+  <div class="panel resume">
+    <div><h2>Resume</h2><p class="muted">The latest version, as a PDF.</p></div>
+    <div class="cta"><a class="btn primary magnetic" id="resume-dl2" href="" download="Sagnic_Bhattacharyya_Resume.pdf">Download PDF</a>
+    <a class="btn magnetic" id="resume-view" href="" target="_blank" rel="noopener">Preview</a></div>
+  </div>
+</section>
+
+<section id="contact" class="wrap">
+  <div class="sh"><b>06</b><h2>Let's talk</h2><i class="line"></i></div>
+  <a class="mail" id="mail" href=""></a>
+  <div class="cta"><button class="btn primary magnetic" id="copy">Copy email</button>
+    <a class="btn magnetic" id="li" href="" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn magnetic" id="gh2" href="" target="_blank" rel="noopener">GitHub</a></div>
+</section>
+</main>
+<footer class="wrap foot">Designed and built by Sagnic Bhattacharyya. <button class="replay" id="replay" type="button">Replay intro</button></footer>
+<div class="toast" id="toast" role="status"></div>
+<dialog id="cert"><img alt="Fortinet Certified Associate in Cybersecurity certificate"><button class="btn" id="cert-close">Close</button></dialog>
+<dialog id="pv" class="pv"><div class="pv-bar"><b id="pv-title"></b><a class="btn" id="pv-open" target="_blank" rel="noopener">Open in new tab</a><button class="btn" id="pv-close">Close</button></div><iframe id="pv-frame" title="Live project preview" loading="lazy"></iframe></dialog>
+<script src="config.js"></script>
+<script src="github.js"></script>
+<script src="script.js"></script>
+<script src="intro.js"></script>
+</body>
+</html>
